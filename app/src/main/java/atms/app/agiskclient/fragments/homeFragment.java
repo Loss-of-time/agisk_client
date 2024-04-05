@@ -123,7 +123,7 @@ public class homeFragment extends Fragment implements View.OnClickListener {
 
         List<noticeListAdapter.NoticeItem> notice_list = new ArrayList<>();
 
-        notice_list.add(new noticeListAdapter.NoticeItem("Update notes", "Provide basic function:\n" + "DiskAction all\n" + "PartitionAction new123 delete12 \n" + "Provide some xmls :\n" + "System Partition Expansion\n" + "Virtual SD Card Maker\n"));
+        notice_list.add(new noticeListAdapter.NoticeItem("Update notes", "Preview V4\n"+"Provide basic function:\n" + "DiskAction all\n" + "PartitionAction new123 delete12 \n" + "Provide some xmls :\n" + "System Partition Expansion\n" + "Virtual SD Card Maker\n"));
 
         notice_list.add(new noticeListAdapter.NoticeItem("Coffee", "paypal.me/gaochuntie\n"));
         notice_list.add(new noticeListAdapter.NoticeItem("Warning", "Partition Number start from 0 , not 1 as sgdisk"));

@@ -626,10 +626,10 @@ DebugUtils.functionHit("onFilePicked");
                 String exe_dir = getContext().getFilesDir().getAbsolutePath() + "/bin";
 
                 //update-binary
-                if (!FileUtils.copyAssetFileToStorage(getContext(), "Firmware/update-binary"
+                if (!(FileUtils.copyAssetFileToStorage(getContext(), "Firmware/update-binary"
                         , script_dir + "/update-binary")
-                        && FileUtils.copyAssetFileToStorage(getContext(), "Firmware/update-script"
-                        , script_dir + "/update-script")
+                        && FileUtils.copyAssetFileToStorage(getContext(), "Firmware/updater-script"
+                        , script_dir + "/updater-script"))
                 ) {
                     //unable to copy file
                     TipDialog.show("Unable to copy files", -1);
